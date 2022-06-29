@@ -12,7 +12,7 @@ namespace Tienda.Models
 
 
         [Required(ErrorMessage ="Mostrar el numero de orden es Requerido")]
-        [Range(1,10)]
+        [Range(1,int.MaxValue, ErrorMessage ="Ingrese el valor mayor a 0")]
         public int MostrarOrden { get; set; }
     }
 }
